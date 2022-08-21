@@ -5,11 +5,109 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping-cart-with-JS</title>
+    <!--daisy UI CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <!--Tailwind CDN-->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
     <header>
-        <h1>Lets go <span>Shopping!!!</span> Shopping</h1>
-    </header>
+        <h1>Lets go <span>Shopping!!!</span></h1>
+        <div class="btm-nav z-10">
+            <button class="bg-pink-200 text-pink-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                </svg>
+                <span class="btm-nav-label">Home</span>
+            </button>
+            <button class="active bg-neutral text-neutral-content">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                <span class="btm-nav-label">Shopping With JS</span>
+            </button>
+            <button class="bg-teal-200 text-teal-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+                <span class="btm-nav-label">Statics</span>
+            </button>
+            </div>
+    </header> 
+    <section class="w-9/12 mx-auto mt-5 pb-20">
+        <div class="grid grid-cols-2 gap-4">
+                <!--all product-->
+                <!--product 01-->
+            <div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="img/coffee.jpg" class="w-full h-40" alt="Coffee JS" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Coffee JS!</h2>
+                        <p>Price: $ <span>100</span></p>
+                        <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <!--all product-->
+                <!--product 02-->
+        <div>
+            <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="img/heart_js.jpg" class="w-full h-40" alt="heart JS" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Heart JS!</h2>
+                        <p>Price: $ <span>100</span></p>
+                        <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+                <!--all product-->
+                <!--product 03-->
+        <div>
+            <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="img/panda.png" class="w-full h-40" alt="Panda JS" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Panda JS!</h2>
+                        <p>Price: $ <span>100</span></p>
+                        <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+                <!--all product-->
+                <!--product 04-->
+        <div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="img/umbrella.png" class="w-full h-40" alt="Umbrella Js" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Umbrella JS!</h2>
+                        <p>Price: $ <span>100</span></p>
+                        <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <!--all product-->
+                <!--product 05-->
+            <div>
+                <div class="card card-compact w-full bg-base-100 shadow-xl">
+                    <figure><img src="img/vue-js.jpg" class="w-full h-40" alt="vue JS" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title">Vue JS!</h2>
+                        <p>Price: $ <span>120</span></p>
+                        <div class="card-actions justify-end">
+                        <button class="btn btn-primary">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- cart -->
+            <div>
+                <h2 class="text-4xl">Total added products</h2>
+            </div>
+        </div>
+    </section>
     <script src="cart.js"></script>
 </body>
 </html>
